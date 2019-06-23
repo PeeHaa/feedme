@@ -1,0 +1,25 @@
+@import './../theme/default';
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    padding-top: calc(48px + 3rem);
+    box-shadow: inset -#{$border-width} 0 0 rgba(0, 0, 0, .1);
+
+    .sidebar-heading {
+        a {
+            font-size: 0.75rem;
+        }
+    }
+
+    .nav-item {
+        .badge {
+            position: relative;
+            top: 2px;
+        }
+    }
+}

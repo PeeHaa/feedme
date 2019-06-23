@@ -1,0 +1,7 @@
+/vendor
+/.idea
+.phpunit.result.cache
+infection.log
+config.php
+phinx.yml
+node_modules

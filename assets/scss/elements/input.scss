@@ -1,0 +1,95 @@
+@import './../theme/default';
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+.form-group {
+    .pretty:hover {
+        label {
+            &:after {
+                background-color: $input-border-color;
+            }
+        }
+    }
+
+    .pretty.p-default input:checked ~ .state label::after {
+        background-color: $primary !important;
+    }
+
+    .pretty {
+        .state {
+            label {
+                &:before {
+                    top: -1px;
+                    width: calc(1em + 3px);
+                    height: calc(1em + 3px);
+                }
+
+                &:after {
+                    width: calc(1em + 3px);
+                    height: calc(1em + 3px);
+                    top: -1px;
+                }
+            }
+        }
+    }
+}
+
+.form-control {
+    &.is-invalid {
+        background-position: calc(100% - 5px) calc(.375em + .1875rem) !important;
+    }
+}
+
+label {
+    font-weight: bold !important;
+}
+
+button {
+    position: relative;
+
+    &.loading {
+        &:after {
+            content:"";
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.27);
+            animation: button-loader 2s linear infinite;
+        }
+    }
+}
+
+@keyframes button-loader {
+    0% {
+        width: 0;
+        left: 0;
+        right: 100%;
+    }
+    25% {
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+    50% {
+        right: 0;
+        width: 0;
+        left: 100%;
+    }
+    75% {
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+    100% {
+        width: 0;
+        left: 0;
+        right: 100%;
+    }
+}
+
+.invalid-feedback {
+    text-align: right;
+    font-weight: bold;
+}

@@ -1,0 +1,54 @@
+table.articles {
+    max-width: 100%;
+    width: 100%;
+
+    tr {
+        &:hover {
+            background: #f6f6f6;
+        }
+
+        td {
+            padding: 0.1rem 0.75rem;
+            vertical-align: middle;
+            color: #636363;
+
+            a:active, a:focus {
+                outline: 0;
+            }
+        }
+
+        .author {
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        .title, .excerpt {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .title {
+            font-weight: 600;
+
+            &.unread {
+                font-weight: 600;
+            }
+        }
+
+        .excerpt {
+            font-size: 0.7rem;
+        }
+
+        .date {
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        &.unread {
+            td, .title {
+                font-weight: 700;
+            }
+        }
+    }
+}

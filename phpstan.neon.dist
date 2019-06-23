@@ -1,0 +1,37 @@
+parameters:
+    ignoreErrors:
+        - '~PHPDoc tag @return contains unresolvable type.~'
+        - '~Parameter #2 \$headers of class Amp\\Http\\Server\\Response constructor expects array<array<string>>, array<string, string> given\.~'
+        -
+            message: '~Parameter #1 \$json of static method Opis\\JsonSchema\\Schema::fromJsonString\(\) expects string, string\|false given\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Validator/Json/Schema/LogInRequest.php*
+                - %currentWorkingDirectory%/src/Validator/Json/Schema/RegisterRequest.php*
+        -
+            message: '~Parameter #2 \$error of class PeeHaa\\FeedMe\\Request\\Error constructor expects HarmonyIO\\Validation\\Result\\Error, HarmonyIO\\Validation\\Result\\Error\|null given\.~'
+            paths:
+                - %currentWorkingDirectory%/src/FrontController.php*
+        -
+            message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getErrors\(\)\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/Error.php*
+        -
+            message: '~Parameter #2 \$errors of class PeeHaa\\FeedMe\\Response\\Error constructor expects array<string, string>, array<int\|string, string> given\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/Error.php*
+        -
+            message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getUsername\(\)\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/LogIn.php*
+        -
+            message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getPassword\(\)\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/LogIn.php*
+        -
+            message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getUsername\(\)\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/Register.php*
+        -
+            message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getPassword\(\)\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/Register.php*

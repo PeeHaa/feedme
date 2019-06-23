@@ -1,0 +1,65 @@
+/* Stolen from: https://codepen.io/rbv912/pen/dYbqLQ */
+
+.loading-indicator {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+
+    .loader {
+        display: block;
+        height: 32px;
+        width: 32px;
+        animation: loader-animation 2s linear infinite;
+        margin: 0 auto;
+
+        span {
+            display: block;
+            position: absolute;
+            top: 0; left: 0;
+            bottom: 0; right: 0;
+            margin: auto;
+            height: 32px;
+            width: 32px;
+            clip: rect(16px, 32px, 32px, 0);
+            animation: loader-animation 1s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0; left: 0;
+                bottom: 0; right: 0;
+                margin: auto;
+                height: 32px;
+                width: 32px;
+                border: 3px solid transparent;
+                border-top: 3px solid #376390;
+                border-radius: 50%;
+                animation: loader-animation 1s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0; left: 0;
+                bottom: 0; right: 0;
+                margin: auto;
+                height: 32px;
+                width: 32px;
+                border: 3px solid #2a4d7580;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .information {
+        padding-top: 15px;
+        color: #c3c3c3;
+    }
+}
+
+@keyframes loader-animation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,20 @@
+@import './../theme/default';
+
+.navbar {
+    background-color: $color-header-2 !important;
+
+    .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+        background-color: $color-header-1;
+        box-shadow: inset -#{$border-width} 0 0 rgba(0, 0, 0, 0.06);
+
+        span {
+            position: absolute;
+            font-size: 0.5rem;
+            top: 20px;
+            right: 15px;
+        }
+    }
+}
