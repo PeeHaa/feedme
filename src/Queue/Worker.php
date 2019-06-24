@@ -47,10 +47,15 @@ final class Worker
         });
     }
 
-    private function publishNewArticles(Articles $articles): void
+    /**
+     * @return Promise<null>
+     */
+    private function publishNewArticles(Articles $articles): Promise
     {
-        foreach ($articles as $article) {
-            $this->newArticleManager->publish($article);
-        }
+        return call(function () use ($articles) {
+            foreach ($articles as $article) {
+                yield $this->newArticleManager->publish($article);
+            }
+        });
     }
 }

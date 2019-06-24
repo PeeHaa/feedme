@@ -2,8 +2,9 @@
 
 namespace PeeHaa\FeedMe\Event;
 
+use Amp\Promise;
 use PeeHaa\FeedMe\Entity\Article;
-use function Amp\asyncCall;
+use function Amp\call;
 use function PeeHaa\FeedMe\generateUuid;
 
 final class NewArticleManager
@@ -20,9 +21,12 @@ final class NewArticleManager
         return $listenerId;
     }
 
-    public function publish(Article $article): void
+    /**
+     * @return Promise<null>
+     */
+    public function publish(Article $article): Promise
     {
-        asyncCall(function () use ($article) {
+        return call(function () use ($article) {
             foreach ($this->listeners as $listener) {
                 yield $listener($article);
             }
