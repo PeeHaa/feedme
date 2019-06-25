@@ -22,10 +22,13 @@ class AuthenticatedRequestTest extends TestCase
             }
 
             /**
+             * phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             *
              * @param array<mixed> $json
              */
             public static function fromArray(array $json, Client $client, User $user): AuthenticatedRequest
             {
+                // phpcs:enable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                 throw new \Exception();
             }
         };

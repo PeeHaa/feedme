@@ -3,7 +3,6 @@
 namespace PeeHaa\FeedMeTest\Unit\Storage\Subscription;
 
 use Amp\Postgres\Link;
-use function Amp\Promise\wait;
 use Amp\Sql\ResultSet;
 use Amp\Sql\Statement;
 use Amp\Success;
@@ -11,6 +10,7 @@ use PeeHaa\FeedMe\Entity\Subscriptions;
 use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Storage\Subscription\PostgresqlRepository;
 use PHPUnit\Framework\TestCase;
+use function Amp\Promise\wait;
 
 class PostgresqlRepositoryTest extends TestCase
 {
