@@ -61,7 +61,7 @@ final class ReadArticle implements RequestHandler
             if (!$userSession->has('userId')) {
                 return new Response(Status::FOUND, [
                     'location'       => $article->getUrl(),
-                    'content-length' => 0,
+                    'content-length' => '0',
                 ], new InMemoryStream());
             }
 
@@ -72,10 +72,10 @@ final class ReadArticle implements RequestHandler
             /** @var User|null $user */
             $user = yield $this->userRepository->getById($userId);
 
-            if (!$user) {
+            if ($user === null) {
                 return new Response(Status::FOUND, [
                     'location'       => $article->getUrl(),
-                    'content-length' => 0,
+                    'content-length' => '0',
                 ], new InMemoryStream());
             }
 
@@ -84,7 +84,7 @@ final class ReadArticle implements RequestHandler
 
             return new Response(Status::FOUND, [
                 'location'       => $article->getUrl(),
-                'content-length' => 0,
+                'content-length' => '0',
             ], new InMemoryStream());
         });
     }

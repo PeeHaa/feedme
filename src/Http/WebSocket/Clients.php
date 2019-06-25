@@ -36,7 +36,7 @@ class Clients
         $clientIds = [];
 
         foreach ($this->clients as $client) {
-            if (!$client->getUser() || $client->getUser()->getId() !== $userId) {
+            if ($client->getUser() === null || $client->getUser()->getId() !== $userId) {
                 continue;
             }
 

@@ -122,11 +122,15 @@ class WebSocket extends WebSocketServer
     public function onData(int $clientId, Message $message): Promise
     {
         return call(function () use ($clientId, $message) {
+            if ($this->clients->getById($clientId) === null) {
+                return;
+            }
+
             /** @var SocketResponse $response */
             $response = yield $this->frontController->handleRequest(
                 yield $message->read(),
                 $this->clients->getById($clientId),
-                $this->clients->getById($clientId) ? $this->clients->getById($clientId)->getUser() : null,
+                $this->clients->getById($clientId)->getUser(),
             );
 
             if ($response instanceof LogInValid || $response instanceof RegisterValid) {
@@ -140,6 +144,10 @@ class WebSocket extends WebSocketServer
     // phpcs:ignore SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
     public function onClose(int $clientId, int $code, string $reason): void
     {
+        if ($this->clients->getById($clientId) === null) {
+            return;
+        }
+
         $this->subscriptions->removeByClient($this->clients->getById($clientId));
 
         $this->clients->removeById($clientId);

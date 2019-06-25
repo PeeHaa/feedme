@@ -7,6 +7,9 @@ parameters:
             paths:
                 - %currentWorkingDirectory%/src/Validator/Json/Schema/LogInRequest.php*
                 - %currentWorkingDirectory%/src/Validator/Json/Schema/RegisterRequest.php*
+                - %currentWorkingDirectory%/src/Validator/Json/Schema/GetArticlesRequest.php*
+                - %currentWorkingDirectory%/src/Validator/Json/Schema/GetCategoriesRequest.php*
+                - %currentWorkingDirectory%/src/Validator/Json/Schema/SubscribeToAllRequest.php*
         -
             message: '~Parameter #2 \$error of class PeeHaa\\FeedMe\\Request\\Error constructor expects HarmonyIO\\Validation\\Result\\Error, HarmonyIO\\Validation\\Result\\Error\|null given\.~'
             paths:
@@ -35,3 +38,21 @@ parameters:
             message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getPassword\(\)\.~'
             paths:
                 - %currentWorkingDirectory%/src/Controller/Register.php*
+        -
+            message: '~Call to an undefined method PeeHaa\\FeedMe\\Request\\Request::getUser\(\)\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/GetArticles.php*
+                - %currentWorkingDirectory%/src/Controller/GetCategories.php*
+                - %currentWorkingDirectory%/src/Controller/SubscribeToAll.php*
+        -
+            message: '~Cannot call method getUrl\(\) on PeeHaa\\FeedMe\\Entity\\Article\|null\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/ReadArticle.php*
+        -
+            message: '~Parameter #1 \$article of method PeeHaa\\FeedMe\\Http\\WebSocket::markArticleAsReadForUser\(\) expects PeeHaa\\FeedMe\\Entity\\Article, PeeHaa\\FeedMe\\Entity\\Article\|null given\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/ReadArticle.php*
+        -
+            message: '~Parameter #1 \$article of method PeeHaa\\FeedMe\\Storage\\Article\\Repository::markAsRead\(\) expects PeeHaa\\FeedMe\\Entity\\Article, PeeHaa\\FeedMe\\Entity\\Article\|null given\.~'
+            paths:
+                - %currentWorkingDirectory%/src/Controller/ReadArticle.php*
