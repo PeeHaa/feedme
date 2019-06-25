@@ -36,4 +36,9 @@ class RegisterValidTest extends TestCase
         $this->assertSame('TheId', $responseData['requestId']);
         $this->assertSame(200, $responseData['status']);
     }
+
+    public function testGetUser(): void
+    {
+        $this->assertInstanceOf(User::class, $this->response->getUser());
+    }
 }

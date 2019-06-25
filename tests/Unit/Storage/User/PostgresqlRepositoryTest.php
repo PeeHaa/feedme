@@ -113,4 +113,80 @@ class PostgresqlRepositoryTest extends TestCase
         $this->assertSame('test@example.com', $user->getUsername());
         $this->assertSame('ThePassword', $user->getHash());
     }
+
+    public function testGetByIdReturnsNullWhenIdDoesNotExist(): void
+    {
+        $link      = $this->createMock(Link::class);
+        $statement = $this->createMock(Statement::class);
+        $resultSet = $this->createMock(ResultSet::class);
+
+        $resultSet
+            ->expects($this->once())
+            ->method('advance')
+            ->willReturn(new Success(false))
+        ;
+
+        $statement
+            ->expects($this->once())
+            ->method('execute')
+            ->willReturn(new Success($resultSet))
+            ->with(['id'])
+        ;
+
+        $link
+            ->expects($this->once())
+            ->method('prepare')
+            ->willReturn(new Success($statement))
+        ;
+
+        $repository = new PostgresqlRepository($link);
+
+        $this->assertNull(wait($repository->getById('id')));
+    }
+
+    public function testGetByIdReturnsUser(): void
+    {
+        $link      = $this->createMock(Link::class);
+        $statement = $this->createMock(Statement::class);
+        $resultSet = $this->createMock(ResultSet::class);
+
+        $resultSet
+            ->expects($this->once())
+            ->method('advance')
+            ->willReturn(new Success(true))
+        ;
+
+        $resultSet
+            ->expects($this->exactly(3))
+            ->method('getCurrent')
+            ->willReturn([
+                'id'            => 'TheId',
+                'email_address' => 'test@example.com',
+                'password'      => 'ThePassword',
+            ])
+        ;
+
+        $statement
+            ->expects($this->once())
+            ->method('execute')
+            ->willReturn(new Success($resultSet))
+            ->with(['id'])
+        ;
+
+        $link
+            ->expects($this->once())
+            ->method('prepare')
+            ->willReturn(new Success($statement))
+        ;
+
+        $repository = new PostgresqlRepository($link);
+
+        /** @var User $user */
+        $user = wait($repository->getById('id'));
+
+        $this->assertInstanceOf(User::class, $user);
+        $this->assertSame('TheId', $user->getId());
+        $this->assertSame('test@example.com', $user->getUsername());
+        $this->assertSame('ThePassword', $user->getHash());
+    }
 }

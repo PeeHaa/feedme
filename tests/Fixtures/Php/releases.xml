@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:php="http://php.net/ns/releases">
+    <title>PHP.net releases</title>
+    <link href="/releases.atom" rel="self"/>
+    <icon>/images/news/php-logo.gif</icon>
+    <author>
+        <name>Webmaster</name>
+        <uri>http://php.net/contact</uri>
+        <email>php-webmaster@lists.php.net</email>
+    </author>
+    <id>http://php.net/releases/index.php</id>
+    <entry>
+        <title>PHP 7.3.6 released!</title>
+        <id>http://php.net/releases/7_3_6.php</id>
+        <php:version>7.3.6</php:version>
+        <published>2019-05-30T00:00:00-07:00</published>
+        <summary type="html">There is a new PHP release in town!</summary>
+        <link rel="enclosure" title="PHP 7.3.6 (tar.bz2)" href="/distributions/php-7.3.6.tar.bz2">
+            <php:sha256>1e5ac8700154835c0910e3a814517da9b87bb4a82cc7011fea1a82096b6f6f77</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <link rel="enclosure" title="PHP 7.3.6 (tar.gz)" href="/distributions/php-7.3.6.tar.gz">
+            <php:sha256>72fbf223ff8659a61eed08eebffb4ede0256e7a69d2151ae24affa5377b70bb8</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <link rel="enclosure" title="PHP 7.3.6 (tar.xz)" href="/distributions/php-7.3.6.tar.xz">
+            <php:sha256>fefc8967daa30ebc375b2ab2857f97da94ca81921b722ddac86b29e15c54a164</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <php:tag>security</php:tag>
+        <updated>2019-05-30T00:00:00-07:00</updated>
+        <content src="http://php.net/releases/7_3_6.php" type="application/xhtml+xml"/>
+    </entry>
+    <entry>
+        <title>PHP 7.2.19 released!</title>
+        <id>http://php.net/releases/7_2_19.php</id>
+        <php:version>7.2.19</php:version>
+        <published>2019-05-30T00:00:00-07:00</published>
+        <summary type="html">There is a new PHP release in town!</summary>
+        <link rel="enclosure" title="PHP 7.2.19 (tar.bz2)" href="/distributions/php-7.2.19.tar.bz2">
+            <php:sha256>ebd0b1f375fe07ed4925acc213d2f5ef76a61bd5de174e7b666b98421a90a099</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <link rel="enclosure" title="PHP 7.2.19 (tar.gz)" href="/distributions/php-7.2.19.tar.gz">
+            <php:sha256>1cd2266a058f3224d3cba594540045542606996f026eeef96747f27f6b3d22b6</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <link rel="enclosure" title="PHP 7.2.19 (tar.xz)" href="/distributions/php-7.2.19.tar.xz">
+            <php:sha256>4ffa2404a88d60e993a9fe69f829ebec3eb1e006de41b6048ce5e91bbeaa9282</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <php:tag>security</php:tag>
+        <updated>2019-05-30T00:00:00-07:00</updated>
+        <content src="http://php.net/releases/7_2_19.php" type="application/xhtml+xml"/>
+    </entry>
+    <entry>
+        <title>PHP 7.1.30 released!</title>
+        <id>http://php.net/releases/7_1_30.php</id>
+        <php:version>7.1.30</php:version>
+        <published>2019-05-30T00:00:00-07:00</published>
+        <summary type="html">There is a new PHP release in town!</summary>
+        <link rel="enclosure" title="PHP 7.1.30 (tar.bz2)" href="/distributions/php-7.1.30.tar.bz2">
+            <php:sha256>664850774fca19d2710b9aa35e9ae91214babbde9cd8d27fd3479cc97171ecb3</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <link rel="enclosure" title="PHP 7.1.30 (tar.gz)" href="/distributions/php-7.1.30.tar.gz">
+            <php:sha256>a604edf85d5dfc28e6ff3016dad3954c50b93db69afc42295178b4fdf42e026c</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <link rel="enclosure" title="PHP 7.1.30 (tar.xz)" href="/distributions/php-7.1.30.tar.xz">
+            <php:sha256>6310599811536dbe87e4bcf212bf93196bdfaff519d0c821e4c0068efd096a7c</php:sha256>
+            <php:releaseDate>2019-05-30T00:00:00-07:00</php:releaseDate>
+        </link>
+        <php:tag>security</php:tag>
+        <updated>2019-05-30T00:00:00-07:00</updated>
+        <content src="http://php.net/releases/7_1_30.php" type="application/xhtml+xml"/>
+    </entry>
+    <updated>2019-05-30T00:00:00-07:00</updated>
+</feed>

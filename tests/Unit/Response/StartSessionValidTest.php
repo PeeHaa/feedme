@@ -2,23 +2,17 @@
 
 namespace PeeHaa\FeedMeTest\Unit\Response;
 
-use PeeHaa\FeedMe\Entity\Session;
-use PeeHaa\FeedMe\Entity\User;
-use PeeHaa\FeedMe\Response\LogInValid;
+use PeeHaa\FeedMe\Response\StartSessionValid;
 use PHPUnit\Framework\TestCase;
 
-class LogInValidTest extends TestCase
+class StartSessionValidTest extends TestCase
 {
-    /** @var LogInValid */
+    /** @var StartSessionValid */
     private $response;
 
     public function setUp(): void
     {
-        $this->response = new LogInValid(
-            'TheId',
-            new User('id', 'username', 'dsjdskljskjd'),
-            new Session('id', 1, 'userId', 'token', new \DateTimeImmutable()),
-        );
+        $this->response = new StartSessionValid();
     }
 
     public function testToJsonReturnsCorrectKeys(): void
@@ -33,12 +27,7 @@ class LogInValidTest extends TestCase
     {
         $responseData = json_decode($this->response->toJson(), true);
 
-        $this->assertSame('TheId', $responseData['requestId']);
+        $this->assertSame('StartSession', $responseData['requestId']);
         $this->assertSame(200, $responseData['status']);
-    }
-
-    public function testGetUser(): void
-    {
-        $this->assertInstanceOf(User::class, $this->response->getUser());
     }
 }

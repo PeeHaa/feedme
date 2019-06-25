@@ -2,9 +2,11 @@
 
 namespace PeeHaa\FeedMeTest\Unit\Request;
 
+use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Exception\RequestNotFound;
 use PeeHaa\FeedMe\Http\WebSocket\Client;
 use PeeHaa\FeedMe\Request\Factory;
+use PeeHaa\FeedMe\Request\GetArticles;
 use PeeHaa\FeedMe\Request\LogIn;
 use PHPUnit\Framework\TestCase;
 
@@ -32,5 +34,18 @@ class FactoryTest extends TestCase
         ];
 
         $this->assertInstanceOf(LogIn::class, (new Factory())->buildFromArray(new Client(1), $requestData));
+    }
+
+    public function testBuildFromArrayBuildsRequestWithUser(): void
+    {
+        $requestData = [
+            'id'   => 'TheId',
+            'type' => 'GetArticles',
+        ];
+
+        $this->assertInstanceOf(
+            GetArticles::class,
+            (new Factory())->buildFromArray(new Client(1), $requestData, new User('id', 'username', 'hash')),
+        );
     }
 }
