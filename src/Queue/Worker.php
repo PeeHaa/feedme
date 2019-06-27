@@ -4,7 +4,7 @@ namespace PeeHaa\FeedMe\Queue;
 
 use Amp\Promise;
 use Auryn\Injector;
-use PeeHaa\FeedMe\Entity\Articles;
+use PeeHaa\FeedMe\Collection\Articles;
 use PeeHaa\FeedMe\Entity\Feed;
 use PeeHaa\FeedMe\Event\NewArticleManager;
 use PeeHaa\FeedMe\Storage\Article\Repository as ArticleRepository;

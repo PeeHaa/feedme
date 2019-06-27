@@ -2,7 +2,7 @@
 
 namespace PeeHaa\FeedMeTest\Unit\Response;
 
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Response\UserCategories;
 use PHPUnit\Framework\TestCase;
 

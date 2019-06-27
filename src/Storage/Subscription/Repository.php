@@ -3,7 +3,7 @@
 namespace PeeHaa\FeedMe\Storage\Subscription;
 
 use Amp\Promise;
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Entity\User;
 
 interface Repository

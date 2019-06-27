@@ -1,6 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PeeHaa\FeedMe\Entity;
+namespace PeeHaa\FeedMe\Collection;
+
+use PeeHaa\FeedMe\Entity\Feed;
 
 final class Feeds implements \Iterator, \Countable
 {

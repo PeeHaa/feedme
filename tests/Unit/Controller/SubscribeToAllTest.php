@@ -3,9 +3,9 @@
 namespace PeeHaa\FeedMeTest\Unit\Controller;
 
 use Amp\Success;
+use PeeHaa\FeedMe\Collection\Subscriptions;
 use PeeHaa\FeedMe\Controller\SubscribeToAll;
 use PeeHaa\FeedMe\Entity\Subscription;
-use PeeHaa\FeedMe\Entity\Subscriptions;
 use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Http\WebSocket\Client;
 use PeeHaa\FeedMe\Http\WebSocket\Subscriptions as PubSubSubscriptions;

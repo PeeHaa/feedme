@@ -2,7 +2,7 @@
 
 namespace PeeHaa\FeedMe\Service\Parser;
 
-use PeeHaa\FeedMe\Entity\Articles;
+use PeeHaa\FeedMe\Collection\Articles;
 
 interface Parser
 {

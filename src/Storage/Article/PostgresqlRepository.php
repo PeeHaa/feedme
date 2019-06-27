@@ -6,11 +6,11 @@ use Amp\Postgres\Link;
 use Amp\Postgres\ResultSet;
 use Amp\Promise;
 use Amp\Sql\Statement;
+use PeeHaa\FeedMe\Collection\Articles;
+use PeeHaa\FeedMe\Collection\UserArticles;
 use PeeHaa\FeedMe\Entity\Article;
-use PeeHaa\FeedMe\Entity\Articles;
 use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Entity\UserArticle;
-use PeeHaa\FeedMe\Entity\UserArticles;
 use function Amp\call;
 use function PeeHaa\FeedMe\generateUuid;
 

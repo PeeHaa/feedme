@@ -5,7 +5,7 @@ namespace PeeHaa\FeedMe\Service\Crawler\Programming\Php;
 use Amp\Artax\Client;
 use Amp\Http\Server\Response;
 use Amp\Promise;
-use PeeHaa\FeedMe\Entity\Articles;
+use PeeHaa\FeedMe\Collection\Articles;
 use PeeHaa\FeedMe\Service\Crawler\Crawler;
 use PeeHaa\FeedMe\Service\Parser\Programming\Php\Bugs as Parser;
 use function Amp\call;

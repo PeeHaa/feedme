@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PeeHaa\FeedMeTest\Unit\Entity;
+namespace PeeHaa\FeedMeTest\Unit\Collection;
 
+use PeeHaa\FeedMe\Collection\UserArticles;
 use PeeHaa\FeedMe\Entity\Article;
 use PeeHaa\FeedMe\Entity\UserArticle;
-use PeeHaa\FeedMe\Entity\UserArticles;
 use PHPUnit\Framework\TestCase;
 
 class UserArticlesTest extends TestCase

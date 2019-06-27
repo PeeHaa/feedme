@@ -3,7 +3,7 @@
 namespace PeeHaa\FeedMe\Service\Crawler;
 
 use Amp\Promise;
-use PeeHaa\FeedMe\Entity\Articles;
+use PeeHaa\FeedMe\Collection\Articles;
 
 interface Crawler
 {

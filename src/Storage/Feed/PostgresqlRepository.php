@@ -5,8 +5,8 @@ namespace PeeHaa\FeedMe\Storage\Feed;
 use Amp\Postgres\Link;
 use Amp\Postgres\ResultSet;
 use Amp\Promise;
+use PeeHaa\FeedMe\Collection\Feeds;
 use PeeHaa\FeedMe\Entity\Feed;
-use PeeHaa\FeedMe\Entity\Feeds;
 use function Amp\call;
 
 final class PostgresqlRepository implements Repository

@@ -3,7 +3,7 @@
 namespace PeeHaa\FeedMe\Controller;
 
 use Amp\Promise;
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Request\GetCategories as GetCategoriesRequest;
 use PeeHaa\FeedMe\Request\Request;
 use PeeHaa\FeedMe\Response\Response;

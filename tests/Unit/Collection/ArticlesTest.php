@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PeeHaa\FeedMeTest\Unit\Entity;
+namespace PeeHaa\FeedMeTest\Unit\Collection;
 
+use PeeHaa\FeedMe\Collection\Articles;
 use PeeHaa\FeedMe\Entity\Article;
-use PeeHaa\FeedMe\Entity\Articles;
 use PHPUnit\Framework\TestCase;
 
 class ArticlesTest extends TestCase

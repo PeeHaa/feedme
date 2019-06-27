@@ -2,7 +2,7 @@
 
 namespace PeeHaa\FeedMeTest\Unit\Response;
 
-use PeeHaa\FeedMe\Entity\UserArticles as ArticleCollection;
+use PeeHaa\FeedMe\Collection\UserArticles as ArticleCollection;
 use PeeHaa\FeedMe\Response\UserArticles;
 use PHPUnit\Framework\TestCase;
 

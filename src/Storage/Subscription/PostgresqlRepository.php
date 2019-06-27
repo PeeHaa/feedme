@@ -6,8 +6,8 @@ use Amp\Postgres\Link;
 use Amp\Postgres\ResultSet;
 use Amp\Promise;
 use Amp\Sql\Statement;
+use PeeHaa\FeedMe\Collection\Subscriptions;
 use PeeHaa\FeedMe\Entity\Subscription;
-use PeeHaa\FeedMe\Entity\Subscriptions;
 use PeeHaa\FeedMe\Entity\User;
 use function Amp\call;
 

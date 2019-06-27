@@ -2,7 +2,7 @@
 
 namespace PeeHaa\FeedMe\Response;
 
-use PeeHaa\FeedMe\Entity\UserArticles as ArticleCollection;
+use PeeHaa\FeedMe\Collection\UserArticles as ArticleCollection;
 
 final class UserArticles implements Response
 {

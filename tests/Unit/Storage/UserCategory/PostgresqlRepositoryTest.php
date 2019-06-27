@@ -6,7 +6,7 @@ use Amp\Postgres\Link;
 use Amp\Postgres\ResultSet;
 use Amp\Sql\Statement;
 use Amp\Success;
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Storage\UserCategory\PostgresqlRepository;
 use PHPUnit\Framework\TestCase;

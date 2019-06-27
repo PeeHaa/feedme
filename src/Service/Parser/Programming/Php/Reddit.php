@@ -2,8 +2,8 @@
 
 namespace PeeHaa\FeedMe\Service\Parser\Programming\Php;
 
+use PeeHaa\FeedMe\Collection\Articles;
 use PeeHaa\FeedMe\Entity\Article;
-use PeeHaa\FeedMe\Entity\Articles;
 use PeeHaa\FeedMe\Exception\Feed\MissingNode;
 use PeeHaa\FeedMe\Service\Parser\Parser;
 use function PeeHaa\FeedMe\generateUuid;

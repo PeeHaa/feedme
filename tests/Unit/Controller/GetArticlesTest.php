@@ -3,9 +3,9 @@
 namespace PeeHaa\FeedMeTest\Unit\Controller;
 
 use Amp\Success;
+use PeeHaa\FeedMe\Collection\UserArticles;
 use PeeHaa\FeedMe\Controller\GetArticles;
 use PeeHaa\FeedMe\Entity\User;
-use PeeHaa\FeedMe\Entity\UserArticles;
 use PeeHaa\FeedMe\Http\WebSocket\Client;
 use PeeHaa\FeedMe\Request\GetArticles as Request;
 use PeeHaa\FeedMe\Response\UserArticles as Response;

@@ -1,6 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PeeHaa\FeedMe\Entity;
+namespace PeeHaa\FeedMe\Collection;
+
+use PeeHaa\FeedMe\Entity\UserArticle;
 
 final class UserArticles implements \Iterator, \Countable
 {

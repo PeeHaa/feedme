@@ -3,8 +3,8 @@
 namespace PeeHaa\FeedMeTest\Unit\Controller;
 
 use Amp\Success;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Controller\GetCategories;
-use PeeHaa\FeedMe\Entity\Categories;
 use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Http\WebSocket\Client;
 use PeeHaa\FeedMe\Request\GetCategories as Request;

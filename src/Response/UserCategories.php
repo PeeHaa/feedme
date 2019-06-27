@@ -2,7 +2,7 @@
 
 namespace PeeHaa\FeedMe\Response;
 
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 
 final class UserCategories implements Response
 {

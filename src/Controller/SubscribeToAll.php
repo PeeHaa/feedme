@@ -3,7 +3,7 @@
 namespace PeeHaa\FeedMe\Controller;
 
 use Amp\Promise;
-use PeeHaa\FeedMe\Entity\Subscriptions;
+use PeeHaa\FeedMe\Collection\Subscriptions;
 use PeeHaa\FeedMe\Http\WebSocket\Subscription;
 use PeeHaa\FeedMe\Http\WebSocket\Subscriptions as PubSubSubscriptions;
 use PeeHaa\FeedMe\Request\GetArticles as ArticlesRequest;

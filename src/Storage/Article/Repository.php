@@ -3,10 +3,10 @@
 namespace PeeHaa\FeedMe\Storage\Article;
 
 use Amp\Promise;
+use PeeHaa\FeedMe\Collection\Articles;
+use PeeHaa\FeedMe\Collection\UserArticles;
 use PeeHaa\FeedMe\Entity\Article;
-use PeeHaa\FeedMe\Entity\Articles;
 use PeeHaa\FeedMe\Entity\User;
-use PeeHaa\FeedMe\Entity\UserArticles;
 
 interface Repository
 {

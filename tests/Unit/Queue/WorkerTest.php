@@ -4,8 +4,8 @@ namespace PeeHaa\FeedMeTest\Unit\Queue;
 
 use Amp\Success;
 use Auryn\Injector;
+use PeeHaa\FeedMe\Collection\Articles;
 use PeeHaa\FeedMe\Entity\Article;
-use PeeHaa\FeedMe\Entity\Articles;
 use PeeHaa\FeedMe\Entity\Feed;
 use PeeHaa\FeedMe\Event\NewArticleManager;
 use PeeHaa\FeedMe\Queue\Worker;

@@ -6,7 +6,7 @@ use Amp\Postgres\Link;
 use Amp\Postgres\ResultSet;
 use Amp\Promise;
 use Amp\Sql\Statement;
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Entity\Category;
 use PeeHaa\FeedMe\Entity\User;
 use function Amp\call;

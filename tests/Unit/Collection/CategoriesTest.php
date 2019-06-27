@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PeeHaa\FeedMeTest\Unit\Entity;
+namespace PeeHaa\FeedMeTest\Unit\Collection;
 
-use PeeHaa\FeedMe\Entity\Categories;
+use PeeHaa\FeedMe\Collection\Categories;
 use PeeHaa\FeedMe\Entity\Category;
 use PHPUnit\Framework\TestCase;
 

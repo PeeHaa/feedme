@@ -6,7 +6,7 @@ use Amp\Postgres\Link;
 use Amp\Sql\ResultSet;
 use Amp\Sql\Statement;
 use Amp\Success;
-use PeeHaa\FeedMe\Entity\Subscriptions;
+use PeeHaa\FeedMe\Collection\Subscriptions;
 use PeeHaa\FeedMe\Entity\User;
 use PeeHaa\FeedMe\Storage\Subscription\PostgresqlRepository;
 use PHPUnit\Framework\TestCase;

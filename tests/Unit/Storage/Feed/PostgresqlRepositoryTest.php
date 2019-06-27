@@ -5,7 +5,7 @@ namespace PeeHaa\FeedMeTest\Unit\Storage\Feed;
 use Amp\Postgres\Link;
 use Amp\Postgres\ResultSet;
 use Amp\Success;
-use PeeHaa\FeedMe\Entity\Feeds;
+use PeeHaa\FeedMe\Collection\Feeds;
 use PeeHaa\FeedMe\Storage\Feed\PostgresqlRepository;
 use PHPUnit\Framework\TestCase;
 use function Amp\Promise\wait;
