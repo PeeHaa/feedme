@@ -93,3 +93,17 @@ button {
     text-align: right;
     font-weight: bold;
 }
+
+.dark {
+    .form-control {
+        background-color: #878686;
+
+        &:focus {
+            background-color: #878686;
+        }
+
+        &::placeholder {
+            color: #495057;
+        }
+    }
+}

@@ -24,8 +24,21 @@ body {
         background: $color-main-background;
     }
 
+    &.dark {
+        background: rgba(0, 0, 0, 0.87);
+        color: #abaaaa;
+
+        a {
+            color: inherit;
+        }
+    }
+
     main {
         padding-top: calc(48px);
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 

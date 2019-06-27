@@ -52,3 +52,17 @@ table.articles {
         }
     }
 }
+
+.dark {
+    table.articles {
+        tr {
+            &:hover {
+                background: #363636;
+            }
+        }
+
+        td, th {
+            border-top: 1px solid #636357;
+        }
+    }
+}
