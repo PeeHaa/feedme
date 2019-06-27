@@ -4,51 +4,7 @@ $primary: #183f6ccc;
 $input-font-weight: 600;
 $btn-font-weight: 600;
 
-/* required bootstrap modules */
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
-
-/* optional bootstrap modules */
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/tables';
-@import '~bootstrap/scss/forms';
-@import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar';
-@import '~bootstrap/scss/badge';
-@import '~bootstrap/scss/alert';
-@import '~bootstrap/scss/modal';
-//@import '~bootstrap/scss/utilities';
-
-//@import '~bootstrap/scss/type';
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    margin-bottom: $headings-margin-bottom;
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
-    line-height: $headings-line-height;
-    color: $headings-color;
-}
-
-h1, .h1 { @include font-size($h1-font-size); }
-h2, .h2 { @include font-size($h2-font-size); }
-h3, .h3 { @include font-size($h3-font-size); }
-h4, .h4 { @include font-size($h4-font-size); }
-h5, .h5 { @include font-size($h5-font-size); }
-h6, .h6 { @include font-size($h6-font-size); }
-
-//@import '~bootstrap/scss/utilities';
-@import '~bootstrap/scss/utilities/align';
-@import '~bootstrap/scss/utilities/display';
-@import '~bootstrap/scss/utilities/flex';
-@import '~bootstrap/scss/utilities/float';
-@import '~bootstrap/scss/utilities/display';
-@import '~bootstrap/scss/utilities/spacing';
-@import '~bootstrap/scss/utilities/display';
-@import '~bootstrap/scss/utilities/text';
-@import '~bootstrap/scss/utilities/visibility';
+@import "./../bootstrap";
 
 $input-border-color: $gray-400;
 
@@ -69,7 +25,7 @@ body {
     }
 
     main {
-        padding-top: calc(48px + 3rem);
+        padding-top: calc(48px);
     }
 }
 
