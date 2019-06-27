@@ -54,6 +54,8 @@ $auryn->share($auryn);
 
 $configuration = Configuration::fromArray(require __DIR__ . '/config.php');
 
+$auryn->share($configuration->getWebServer());
+
 $auryn->alias(HttpClient::class, DefaultClient::class);
 
 $auryn->share(Link::class);
